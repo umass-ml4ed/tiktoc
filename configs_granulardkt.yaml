@@ -1,0 +1,67 @@
+##################################################
+# exp_opts
+##################################################
+seed: 0
+exp_name: 'granulardkt' 
+save_model: false
+testing: false # only use a very small portion of the dataset for testing purposes
+log_train_every_itr: 100
+model_save_dir: 'checkpoints_granulardkt'
+use_cuda: true
+log_wandb: false
+continue_training: false
+start_epoch: 0
+wandb_project: 'granularDKT'
+wandb_key: 'ff70920d9852a9d2e78bbd1cd2e100154d2c9c7d' #Change to your own api key
+##################################################
+# data_opts
+##################################################
+data_path: 'data'
+test_size: 0.2 # percentage of test dataset
+max_len: 200 # maximum number of submission per student 
+label_type: 'raw' # score division category, choose from 'binary', 'tenary' or 'raw'
+first_ast_convertible: true # whether to use student first submission to each question
+split_by: 'student'
+baseline: 'granular'
+##################################################
+# model_lstm_opts
+##################################################
+use_lstm: true
+lstm_inp_dim: 968 # Fixed at 968 as it's 768+200 (200 is the prompt embedding)
+lstm_hid_dim: 4096
+trans_hid_dim: 256
+train_lstm: true 
+num_layers: 1
+lstm_lr: 0.0015
+trans_lr: 0.001
+##################################################
+# model_gpt_opts
+##################################################
+okt_model: 'meta-llama/Meta-Llama-3-8B-Instruct' # pre-trained GPT model: choose from 'student', 'funcom', 'gpt-2', 'codellama/CodeLlama-7b-Instruct-hf', 'meta-llama/Meta-Llama-3-8B-Instruct', or 'Qwen/Qwen1.5-7B'
+train_okt: true
+##################################################
+# train_granular_opts
+##################################################
+epochs: 1
+batch_size: 64
+accum_iter: 1
+T_max: 26
+valid_question_no: 17
+granular_hid_dim: 256
+granular_lr: 0.001
+use_scheduler: true
+use_scheduler_lstm: true
+use_scheduler_classifier: true
+use_transition_model: false
+warmup_ratio: 0.1
+loss_func: 'BCEwithlogits'
+scheduler_lstm_factor: 0.5
+scheduler_granular: 0.5
+scheduler_trans: 0.5
+multitask_label: ''
+##################################################
+# LoRA configs
+##################################################
+lora_alpha: 256
+lora_dropout: 0.05
+lora_r: 128
