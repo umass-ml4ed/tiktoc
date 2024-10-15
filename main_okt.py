@@ -33,7 +33,7 @@ def main(configs):
 
     print(configs.okt_model)
     if configs.okt_model == 'meta-llama/Meta-Llama-3-8B-Instruct':
-        login(token='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')
+        login(token='')
     
     # Set device
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')

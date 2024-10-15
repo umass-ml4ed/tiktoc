@@ -766,7 +766,7 @@ def main(configs):
     if configs.use_cuda: assert device.type == 'cuda', 'No GPU found'
 
     if configs.okt_model == 'meta-llama/Meta-Llama-3-8B-Instruct':
-        login(token='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')
+        login(token='')
 
     if configs.log_wandb:
         wandb.login(key=configs.wandb_key, verify=True)

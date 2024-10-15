@@ -12,7 +12,7 @@ log_wandb: false
 continue_training: false
 start_epoch: 0
 wandb_project: 'okt-multitask-cv'
-wandb_key: 'ff70920d9852a9d2e78bbd1cd2e100154d2c9c7d' #Change to your own api key
+wandb_key: '' #Change to your own api key
 ##################################################
 # data_opts
 ##################################################
