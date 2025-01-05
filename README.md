@@ -1,5 +1,5 @@
 # Test Case-Informed Knowledge Tracing for Open-ended Coding Tasks (TIKOC)
-This repository contains the code for the paper <a href="[https://arxiv.org/pdf/2410.10829](https://arxiv.org/abs/2410.10829)">Test Case-Informed Knowledge Tracing for Open-ended Coding Tasks</a>. The primary contributions here include the code for multitask model on both OKT and GranularKT and the code for running deep KT on granular level KT.
+This repository contains the code for the paper <a href="https://arxiv.org/abs/2410.10829">Test Case-Informed Knowledge Tracing for Open-ended Coding Tasks</a>. The primary contributions here include the code for multitask model on both OKT and GranularKT and the code for running deep KT on granular level KT.
 
 ## Setup
 
