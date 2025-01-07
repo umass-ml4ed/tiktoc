@@ -26,7 +26,6 @@ With trained model, run the following command for evaluation:
 python eval.py
 ```
 
-
 #### Best Hyperparameters Found
 
 Multitask Model:
@@ -34,4 +33,17 @@ Multitask Model:
 - lr=1e-5
 - multitask_pred_linear=1e-4
 - lr_linear=5e-3
+
+If you use our code or find this work useful in your research then please cite us!
+```
+@misc{duan2024testcaseinformedknowledgetracing,
+      title={Test Case-Informed Knowledge Tracing for Open-ended Coding Tasks}, 
+      author={Zhangqi Duan and Nigel Fernandez and Alexander Hicks and Andrew Lan},
+      year={2024},
+      eprint={2410.10829},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2410.10829}, 
+}
+```
 
