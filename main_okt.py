@@ -13,7 +13,7 @@ from utils import *
 from eval import *
 from huggingface_hub import login
 from pdb import set_trace
-from test_case_check_update import test_case_check, uniq_test_construct, handle_uniq_test_exception, get_test_case_solution
+from gen_code_compiler import test_case_check, uniq_test_construct, handle_uniq_test_exception, get_test_case_solution
 
 
 def sanitize_configs(configs):
